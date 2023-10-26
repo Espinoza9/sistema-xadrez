@@ -1,11 +1,14 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import boardgame.Posicao;
 import xadrez.PecaDeXadrez;
 import xadrez.XadrezPosicao;
 
 public class UI {
+
+    public static void limpartela(){
+        System.out.print("\033[H\033[2j");
+        System.out.flush();
+    }
 public static XadrezPosicao lerPosicaoDoChadrez(Scanner sc){
     try{
     String s = sc.nextLine();
